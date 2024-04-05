@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Python to Phython",
+    "version": "1.0",
+    "description": "This extension will change the word Python to Phython",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+      "permissions": [
+        "tabs"
+      ]
+
+}
+
